@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+
+<div data-role="page" id="Home">
+    <div class="Header" id="Header" data-theme="e" data-role="header">
+        <h5>
+           Welcome to Insta-Charity
+        </h5></div>
+    
+  <img  src="http://pubrecord.org/wordpress/wp-content/uploads/2009/07/zakat.jpg" width ="60%" height="60%" />
+    <div data-role="content">
+        <a href="#LogIn" data-role="button" data-transition="pop" data-inline = "true">Log In</a>
+         <a class="Register" id="Register" data-role="button" target="_blank" data-inline="true"
+        href="#page1">
+            Register
+        </a>
+    </div>
+    <div class="Footer" id="Footer" data-theme="e" data-role="footer">
+        <h4>
+            &copy Team Tech Roos
+        </h4>
+    </div>
+    </div>
+<!--=====================================================-->
+      <div data-role="page" id="LogIn" data-title="Log In Page" data-theme="a">
+        <div data-role="header">
+            <h1>Log In</h1>
+        </div>
+
+        <div data-role="content">
+            <div data-role="fieldcontain">
+                <label for="name">Email:   </label>
+                <input type="text" name="name" id="Email" value="" />
+                <br />
+                <label for="name">Password:</label>
+                <input type="password" name="name" id="Password" value="" />
+                <br />
+                <a id="LogInButton" href="#UserPage" data-role="button" data-theme="d" data-transition="pop">Log In</a>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; Team Tech Roos</h4>
+        </div>
+    </div>
+ <!--=========================================================--->
+    <div data-role="page" id="UserPage" data-title="Log In Page" data-theme="a">
+        <div data-role="header">
+            <h1>Insta-Charity</h1>
+        </div>
+
+        <div data-role="content">
+            <div data-role="fieldcontain">
+                <label for="name">Email:   </label>
+                <input type="text" name="name" id="Text1" value="" />
+                <br />
+                <label for="name">Password:</label>
+                <input type="password" name="name" id="Password1" value="" />
+                <br />
+                <a id="A1" href="#UserPage" data-role="button" data-theme="d" data-transition="pop">Log In</a>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; Team Tech Roos</h4>
+        </div>
+    </div>
+
+</body>
+</html>

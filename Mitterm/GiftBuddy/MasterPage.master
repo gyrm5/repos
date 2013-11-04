@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="Head1" runat="server">
+    <title>Gift Buddy</title>
+    <webopt:BundleReference runat="server" Path="~/Content/themes/base/jquery-ui.css" />
+    <asp:ContentPlaceHolder runat="server" ID="Head" />
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+            </Scripts>
+        </asp:ScriptManager>
+        <header class="ui-widget ui-widget-header ui-corner-all">
+            <a id="A1" runat="server" href="~/">GiftBuddy</a>
+        </header>
+        <div id="body" class="ui-widget ui-widget-content ui-corner-all" style="display: table; width: 100%;">
+                <div>
+                    <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                </div>
+            </div>
+        
+        <footer class="ui-widget ui-widget-content ui-corner-all">
+            <div class="float-left">
+                <p>&copy; Giresh</p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
+
